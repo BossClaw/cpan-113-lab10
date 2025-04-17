@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>API Interaction Demo</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	</head>
+	<body>
+		<main>
+			<h1>API Interaction Demo</h1>
+
+			<section>
+				<h2>Fetch Post Examples</h2>
+				<button id="butt_get_fetch">Fetch Data with fetch()</button>
+				<button id="butt_get_xhr">Fetch Data with XHR</button>
+
+				<pre id="output_get">Get output will appear here.</pre>
+			</section>
+
+			<section>
+				<h2>Create New Post</h2>
+				<form id="post_form_new">
+					Title <input type="text" id="title_new" placeholder="Title" required /> Body <textarea id="body_new" placeholder="Body" required></textarea>
+					<button type="submit">Submit Post</button>
+				</form>
+
+				<pre id="output_post_new">New Post output will appear here.</pre>
+			</section>
+
+			<section>
+				<h2>Update Post with put</h2>
+				<p>Enter Post ID 1 to see success. Enter Post ID 101 to see server error.</p>
+
+				<form id="post_form_update">
+					Post ID <input type="number" id="id_update" placeholder="Post ID to Update" required /> Title
+					<input type="text" id="title_update" placeholder="Update Title" required /> body
+					<textarea id="body_update" placeholder="Update Body" required></textarea>
+					<button type="submit">Update Post</button>
+				</form>
+				<pre id="output_put_update">Update Put output will appear here.</pre>
+			</section>
+
+			<section>
+				<h2>Get Posts</h2>
+				<p>The posts will be sliced to just the first 10 to simulate pagination.</p>
+				<button id="butt_fetch_posts">Get first 10 Posts</button>
+
+				<pre id="output_fetch_posts">First 10 posts will appear here.</pre>
+			</section>
+		</main>
+	</body>
+</html>

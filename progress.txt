@@ -1,0 +1,81 @@
+Objective
+This lab is designed to challenge your ability to interact with APIs using JavaScript. By the end of this lab, you should be able to:
+
+Make GET, POST, and PUT requests using fetch() and XMLHttpRequest (XHR).
+Handle both successful responses and errors effectively.
+Work with JSON data and dynamically update the DOM.
+
+
+Part 1: Setup
+
+Instructions:
+[X] Create a folder named Lab10_API_Calls and set up the following files:
+[X] index.html for your structure.
+[X] style.css for styling.
+[X] script.js for JavaScript logic.
+
+Design a simple webpage with the following features:
+[X] Two buttons:
+[X] "Fetch Data with fetch()"
+[X] "Fetch Data with XHR"
+[X] A div or section where fetched data will be displayed.
+[X] An input form to send data using POST requests.
+[X] An input form to send data using PUT requests.
+
+
+Part 2: Tasks
+
+[X] Task 1: API Interaction Using GET Requests
+    [X] Use the API endpoint: https://jsonplaceholder.typicode.com/posts/1.
+    [X] Implement a GET request using fetch() when the first button is clicked.
+    [X] Display the fetched data (title and body) dynamically in your webpage.
+    [X] Handle errors and display an error message on the page if the request fails.
+
+[X] Task 2: API Interaction Using XMLHttpRequest
+    [X] Use the API endpoint: https://jsonplaceholder.typicode.com/posts/2.
+    [X] Implement a GET request using XMLHttpRequest for the second button.
+    [X] Display the fetched data (title and body) dynamically in your webpage.
+    [X] Handle errors and display an error message on the page if the request fails.
+
+[X] Task 3: Send Data Using POST
+    [X] Add a form to the webpage where users can input a post title and body.
+    [X] Use the API endpoint: https://jsonplaceholder.typicode.com/posts.
+    [X] When the form is submitted, send a POST request using fetch().
+    [X] Display a confirmation message with the response data if the request is successful.
+    [X] Handle errors and display an error message if the request fails.
+
+[ ] Task 4: Update Data Using PUT
+    [X] Add an additional input field for the id of the post to be updated.
+    [X] Use the API endpoint: https://jsonplaceholder.typicode.com/posts/{id} 
+        [X] (replace {id} with the input value).
+    [X] Implement a PUT request using XMLHttpRequest to update the title and body of the specified post.
+    [X] Display the updated data on the webpage if the request is successful.
+    [X] Handle errors and display an error message if the request fails.
+
+[ ] Part 3: Challenges
+    [X] Dynamic Error Handling: Implement error handling such that errors are displayed differently based on the type of failure e.g., 
+        [X] network error, 
+        [X] invalid input,
+        [X] or server error.
+    [X] Optional Endpoint:
+        [X] Explore the API documentation for https://jsonplaceholder.typicode.com 
+            [X] and add one more feature of your choice (e.g., 
+                [~] deleting a post,
+                [X] fetching all posts, etc.).
+
+    [X] Enhanced Styling: Make your page 
+        [X] responsive and 
+        [X] visually appealing by styling the buttons, forms, and results section.
+
+
+API Endpoints Summary
+[X] GET (Fetch a specific post): https://jsonplaceholder.typicode.com/posts/1
+[X] GET (Fetch another post): https://jsonplaceholder.typicode.com/posts/2
+[X] POST (Create a new post): https://jsonplaceholder.typicode.com/posts
+[X] PUT (Update an existing post): https://jsonplaceholder.typicode.com/posts/{id}
+
+
+Submission Requirements
+[X] Your project folder must include index.html, style.css, and script.js.
+[X] Zip your project and upload it to a GitHub repository.
+[X] Submit the GitHub repository link and a live demo link via GitHub Pages.

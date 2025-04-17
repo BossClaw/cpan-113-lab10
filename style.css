@@ -1,0 +1,139 @@
+body {
+	/* NOT FULL COLOURS IN ORDER TO REDUCE CONTRAST AND LOOK 'OLD 70s TEXT-BOOKY' */
+	background-color: #201727;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body,
+a,
+a:hover,
+a:visited {
+	color: #aa6600;
+}
+
+h1,
+h2,
+h3 {
+	margin-block: 10px;
+}
+h4,
+h5 {
+	margin-block: 5px;
+}
+
+h1 {
+	color: burlywood;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	color: #aa6600;
+}
+
+/* ===================================================================== */
+/* FORMS */
+
+button,
+input,
+textarea {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px 5px;
+	display: block;
+	border-radius: 10px;	
+}
+
+button {
+	background-color: #9cefd3;
+	border: 2px solid #69aa99;
+  box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+	border-color: white;
+}
+
+button:active {
+	background-color: white;
+}
+
+.error {
+	color: #db5a5a;
+  font-weight: bold;
+}
+
+.success {
+	color: rgb(13, 197, 13);
+}
+
+/* ================================================================ */
+/* OUTPUT */
+
+pre {
+	/* NOT FULL WHITE FOR CONTRAST, SLIGHT ORANGE-ISH */
+	color: #d3bbac;
+	
+  /* WIP - GOOD CONTRAST FOR VISIBLILITY */
+	background-color: black;
+
+	padding: 20px;
+	border-radius: 10px;
+
+	/* KEEP PRE, BUT WRAP FOR EASIER LEGIBILTIY */
+	white-space: pre-wrap;
+}
+
+/* ================================================================ */
+/* MAIN CONTENT  */
+
+main {
+	margin: 1em auto;
+	background-color: #0066aa;
+}
+
+@media (min-width: 992px) {
+	main {
+		width: 902px;
+		padding: 20px;
+		border-radius: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	main {
+		width: 688px;
+		padding: 20px;
+		border-radius: 20px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	main {
+		width: 526px;
+		padding: 10px;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 575px) {
+	main {
+		width: 400px;
+		padding: 10px;
+		border-radius: 10px;
+	}
+}
+
+/* ======================================================================= */
+/* SECTION */
+
+section {
+	margin-bottom: 30px;
+	background-color: #f5e8d6;
+	border-radius: 10px;
+	box-shadow: 0px 12px 2px 1px rgba(0, 0, 0, 0.2);
+	padding: 30px;
+}
